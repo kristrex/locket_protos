@@ -10,7 +10,7 @@ service Auth {
   rpc Register(RegisterRequest) returns (google.protobuf.Empty);
   rpc Login (LoginRequest) returns (LoginResponse);
   rpc RefreshToken(RefreshTokenRequest) returns (RefreshTokenResponse);
-  rpc Logout(LoginRequest) returns (google.protobuf.Empty);
+  rpc Logout(LogoutRequest) returns (google.protobuf.Empty);
 }
 
 message RegisterRequest {
